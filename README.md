@@ -226,8 +226,8 @@ rural = bubble_df[bubble_df["city_type"]=="Rural"]
 plt.style.use("dark_background")
 matplotlib.rcParams.update({'font.size': 22})
 ax = urban.plot(kind="scatter", x="total_rides", y="average_fare", figsize=(15,10), alpha=.9, edgecolor="k", linewidth=0.3, s=total_drivers*20, color="lightcoral", label="urban");
-suburban.plot(kind="scatter", x="total_rides", y="average_fare", alpha=.8, edgecolor="k", linewidth=0.3, s=total_drivers*20, color="lightskyblue", label="suburban", ax=ax);
-rural.plot(kind="scatter", x="total_rides", y="average_fare", alpha=.8, edgecolor="k", linewidth=0.3, s=total_drivers*20, color="gold", label="rural", ax=ax);
+suburban.plot(kind="scatter", x="total_rides", y="average_fare", alpha=.8, edgecolor="k", linewidth=0.3, s=total_drivers*10, color="lightskyblue", label="suburban", ax=ax);
+rural.plot(kind="scatter", x="total_rides", y="average_fare", alpha=.8, edgecolor="k", linewidth=0.3, s=total_drivers*5, color="gold", label="rural", ax=ax);
 
 # Set style
 plt.grid()
